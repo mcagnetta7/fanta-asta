@@ -1,0 +1,290 @@
+export const STRATEGIE_GENERALI_DIFENSORI = [
+  {
+    id: 1,
+    numero: 1,
+    nome: "Super Top + equilibrio",
+    descrizione: "1 super top + 1 semitop + 2 fascia alta + 4 low/value",
+    struttura: "1-1-2-4",
+    budgetIndicativo: "85-110",
+    rischio: "Basso",
+    ideale: "Quasi tutte le leghe",
+    profiliEsempio: ["Dimarco", "Rrahmani", "N'Dicka", "Scalvini", "Valeri", "Doekhi", "Gallo", "Pedersen"],
+  },
+  {
+    id: 2,
+    numero: 2,
+    nome: "Due Top",
+    descrizione: "2 top + 2 medi + 4 low cost",
+    struttura: "2-2-4",
+    budgetIndicativo: "100-125",
+    rischio: "Basso/medio",
+    ideale: "Modificatore forte",
+    profiliEsempio: ["Bremer", "Wesley", "N'Dicka", "Scalvini", "Valeri", "Doekhi", "Gallo", "Pedersen"],
+  },
+  {
+    id: 3,
+    numero: 3,
+    nome: "Nessun Super Top",
+    descrizione: "2 semitop + 2/3 fascia alta + 3/4 value",
+    struttura: "2-3-3",
+    budgetIndicativo: "75-100",
+    rischio: "Basso",
+    ideale: "Aste dove i top vengono strapagati",
+    profiliEsempio: ["Molina", "Rrahmani", "Mancini", "N'Dicka", "Scalvini", "Valeri", "Doekhi", "Gallo"],
+  },
+  {
+    id: 4,
+    numero: 4,
+    nome: "Modificatore Premium",
+    descrizione: "Schierare quasi sempre 4 difensori con alta probabilità di voto >= 6",
+    struttura: "4 titolari da voto",
+    budgetIndicativo: "100-130",
+    rischio: "Basso",
+    ideale: "Con modificatore",
+    profiliEsempio: ["Bremer", "Bastoni", "Akanji", "Rrahmani", "Gila", "N'Dicka", "Solet", "Mancini"],
+  },
+  {
+    id: 5,
+    numero: 5,
+    nome: "Modificatore Value",
+    descrizione: "3/4 difensori da buon voto + nessun super top obbligatorio",
+    struttura: "3-4-1",
+    budgetIndicativo: "70-95",
+    rischio: "Basso",
+    ideale: "Con modificatore",
+    profiliEsempio: ["Rrahmani", "Gila", "N'Dicka", "Scalvini", "Valeri", "Doekhi", "Tiago Gabriel", "Valeri"],
+  },
+  {
+    id: 6,
+    numero: 6,
+    nome: "Bonus Pesante",
+    descrizione: "Esternи offensivi + centrali goleador",
+    struttura: "Bonus-oriented",
+    budgetIndicativo: "85-115",
+    rischio: "Medio",
+    ideale: "Senza modificatore",
+    profiliEsempio: ["Dimarco", "Wesley", "Molina", "Cambiaso", "Spinazzola", "Zappacosta", "Yan Couto", "Norton-Cuffy"],
+  },
+  {
+    id: 7,
+    numero: 7,
+    nome: "Difensori che giocano alti",
+    descrizione: "D listati come difensori ma utilizzati da esterni/quinti",
+    struttura: "3-4 esterni",
+    budgetIndicativo: "75-105",
+    rischio: "Medio",
+    ideale: "Bonus-oriented",
+    profiliEsempio: ["Dimarco", "Wesley", "Molina", "Cambiaso", "Spinazzola", "Norton-Cuffy", "Kamara", "Mangas"],
+  },
+  {
+    id: 8,
+    numero: 8,
+    nome: "Un Top + tutto Value",
+    descrizione: "1 top + 7 value/titolari",
+    struttura: "1-7",
+    budgetIndicativo: "60-85",
+    rischio: "Medio",
+    ideale: "Aste competitive",
+    profiliEsempio: ["Bremer", "N'Dicka", "Scalvini", "Valeri", "Doekhi", "Mitaj", "Gallo", "Pedersen"],
+  },
+  {
+    id: 9,
+    numero: 9,
+    nome: "Difesa completamente equilibrata",
+    descrizione: "8 giocatori schierabili, nessun investimento enorme",
+    struttura: "Equilibrata",
+    budgetIndicativo: "65-90",
+    rischio: "Basso/medio",
+    ideale: "Tutte le leghe",
+    profiliEsempio: ["N'Dicka", "Scalvini", "Ostigard", "Doekhi", "Valeri", "Norton-Cuffy", "Mitaj", "Gallo"],
+  },
+  {
+    id: 10,
+    numero: 10,
+    nome: "Low Cost titolari",
+    descrizione: "Provincia titolare economica",
+    struttura: "Low cost",
+    budgetIndicativo: "45-70",
+    rischio: "Alto",
+    ideale: "Senza modificatore",
+    profiliEsempio: ["Valeri", "Mitaj", "Gallo", "Pedersen", "Comert", "Bella-Kotchap", "Mangas", "Marcandalli"],
+  },
+  {
+    id: 11,
+    numero: 11,
+    nome: "Scommesse ad upside",
+    descrizione: "4 sicuri + 2 sorprese + 2 titolari economici",
+    struttura: "4-2-2",
+    budgetIndicativo: "50-80",
+    rischio: "Alto",
+    ideale: "Leghe aggressive",
+    profiliEsempio: ["Yan Couto", "Koulierakis", "Mitaj", "Obrador", "Ahanor", "Valdepenas", "Kaiki", "Jimenez"],
+  },
+  {
+    id: 12,
+    numero: 12,
+    nome: "Coppie di ballottaggio",
+    descrizione: "Coprire il ballottaggio di squadra",
+    struttura: "Ballottaggio",
+    budgetIndicativo: "Variabile",
+    rischio: "Medio",
+    ideale: "Leghe numerose",
+    profiliEsempio: ["Bernasconi + Ahanor", "Valle + Kaiki", "Zappacosta + Bellanova", "Jimenez + Joao Mario"],
+  },
+  {
+    id: 13,
+    numero: 13,
+    nome: "Infortunati a saldo",
+    descrizione: "Scommesse su rientri",
+    struttura: "1 infortunato",
+    budgetIndicativo: "Pochi crediti",
+    rischio: "Alto",
+    ideale: "Se già blindati 6/7",
+    profiliEsempio: ["Buongiorno", "Hien", "Parisi"],
+  },
+  {
+    id: 14,
+    numero: 14,
+    nome: "Value / Opportunistica",
+    descrizione: "Nessun nome obbligatorio; seguire il prezzo",
+    struttura: "Griglice fasce-prezzo",
+    budgetIndicativo: "50-120",
+    rischio: "Medio",
+    ideale: "Tutte",
+    profiliEsempio: ["D1: Dimarco/Wesley/Bremer", "D2: Molina/Rrahmani/Akanji", "D3: N'Dicka/Scalvini/Solet/Gila", "D4: Ostigard/Doekhi/Valeri"],
+  },
+];
+
+export const PIANI_DIFESA = [
+  {
+    id: "piano-a",
+    piano: "A",
+    nome: "Modificatore equilibrato",
+    descrizione: "Difesa profonda con 4 giocatori da schierare sempre",
+    budgetIndicativo: "90-105",
+    priortaModificatore: true,
+  },
+  {
+    id: "piano-b",
+    piano: "B",
+    nome: "1 Top + reparto profondo",
+    descrizione: "Un leader più tanti titolari di valore",
+    budgetIndicativo: "85-100",
+    priortaModificatore: false,
+  },
+  {
+    id: "piano-c",
+    piano: "C",
+    nome: "Zero Top, 5-6 ottimi titolari",
+    descrizione: "Massimo rapporto qualità/prezzo",
+    budgetIndicativo: "75-90",
+    priortaModificatore: false,
+  },
+  {
+    id: "piano-d",
+    piano: "D",
+    nome: "Difesa da bonus",
+    descrizione: "Esterni offensivi + centrali goleador",
+    budgetIndicativo: "85-105",
+    priortaModificatore: false,
+  },
+  {
+    id: "piano-e",
+    piano: "E",
+    nome: "Value / Low Cost",
+    descrizione: "Massimo risparmio per centrocampo e attacco",
+    budgetIndicativo: "55-75",
+    priortaModificatore: false,
+  },
+];
+
+export const VALUE_PICKS = [
+  "Mancini",
+  "Scalvini",
+  "Doekhi",
+  "Valeri",
+  "Norton-Cuffy",
+  "Mitaj",
+  "Obrador",
+  "N'Dicka",
+  "Ostigard",
+  "Tiago Gabriel",
+];
+
+export const COPPIE_BALLOTTAGGIO = [
+  {
+    giocatori: ["Bernasconi", "Ahanor"],
+    squadra: "Atalanta",
+    nota: "Interessante per spinta, solo a prezzo controllato",
+  },
+  {
+    giocatori: ["Valle", "Kaiki"],
+    squadra: "Como",
+    nota: "Interessante per bonus; contendono il posto",
+  },
+  {
+    giocatori: ["Zappacosta", "Bellanova"],
+    squadra: "Atalanta",
+    nota: "Jolly offensivo; coppia possibile ma non obbligatoria",
+  },
+  {
+    giocatori: ["Jimenez", "Joao Mario"],
+    squadra: "Fiorentina",
+    nota: "Jolly offensivo a pochi crediti",
+  },
+  {
+    giocatori: ["Obrador", "Doig"],
+    squadra: "Sassuolo",
+    nota: "Scommessa intrigante per bonus",
+  },
+  {
+    giocatori: ["Koulierakis", "Hermoso"],
+    squadra: "Roma",
+    nota: "Scommessa intrigante; non pagare da titolare certo",
+  },
+];
+
+export const INFORTUNATI_SALDO = [
+  {
+    nome: "Buongiorno",
+    squadra: "Napoli",
+    infortunio: "Menisco",
+    rientro: "Novembre",
+    nota: "Scommessa da saldo; potenziale big nella seconda parte",
+  },
+  {
+    nome: "Hien",
+    squadra: "Atalanta",
+    infortunio: "Indisponibile",
+    rientro: "Ottobre inoltrato",
+    nota: "Investimento di lungo periodo a pochi crediti",
+  },
+  {
+    nome: "Parisi",
+    squadra: "Fiorentina",
+    infortunio: "Crociato",
+    rientro: "Novembre-dicembre",
+    nota: "Più da asta di riparazione che da asta iniziale",
+  },
+];
+
+export const BUDGET_DIFESA = [
+  { strategia: "Ultra low cost", budget: "45-60" },
+  { strategia: "Risparmio", budget: "60-75" },
+  { strategia: "Equilibrata", budget: "75-95" },
+  { strategia: "Modificatore", budget: "90-115" },
+  { strategia: "Premium", budget: "105-125" },
+  { strategia: "Modificatore super premium", budget: "120-140" },
+];
+
+export function getStrategiaById(id) {
+  return STRATEGIE_GENERALI_DIFENSORI.find((s) => s.id === id);
+}
+
+export function getPianoById(id) {
+  return PIANI_DIFESA.find((p) => p.id === id);
+}
+
+export function isValuePick(nome) {
+  return VALUE_PICKS.includes(nome);
+}
