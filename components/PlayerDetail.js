@@ -112,6 +112,16 @@ export default function PlayerDetail({
                 MERCATO
               </span>
             )}
+            {portiere.titolare === "infortunato" && (
+              <span className="inline-block px-2 py-1 rounded text-xs font-bold bg-red-600 text-white">
+                INFORTUNATO
+              </span>
+            )}
+            {typeof portiere.fascia === "string" && portiere.fascia.startsWith("EXTRA") && (
+              <span className="inline-block px-2 py-1 rounded text-xs font-bold bg-violet-600 text-white">
+                {portiere.fascia}
+              </span>
+            )}
             {portiere.profilo && (
               <span className="inline-block px-2 py-1 rounded text-xs font-bold bg-cyan-600 text-white">
                 {portiere.profilo}

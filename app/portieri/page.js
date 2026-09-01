@@ -7,6 +7,14 @@ import PlayerDetail from "@/components/PlayerDetail";
 import { PORTIERI } from "@/data/portieri";
 import { FASCE, TITOLARITA, FASCIA_COLORS, TAGS_PORTIERI } from "@/data/constants";
 
+// Rimuove i segni diacritici per una ricerca insensibile agli accenti
+function normalizza(testo) {
+  return testo
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+}
+
 export default function PortieriPage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [fasciaSelezionata, setFasciaSelezionata] = useState("");
@@ -32,13 +40,13 @@ export default function PortieriPage() {
   const filteredPortieri = useMemo(() => {
     let result = PORTIERI;
 
-    // Search
+    // Search (accenti normalizzati: "tornqvist" trova "Törnqvist")
     if (searchTerm) {
-      const term = searchTerm.toLowerCase();
+      const term = normalizza(searchTerm);
       result = result.filter((p) =>
-        p.nome.toLowerCase().includes(term) ||
-        (p.nomeBreve && p.nomeBreve.toLowerCase().includes(term)) ||
-        p.squadra.toLowerCase().includes(term)
+        normalizza(p.nome).includes(term) ||
+        (p.nomeBreve && normalizza(p.nomeBreve).includes(term)) ||
+        normalizza(p.squadra).includes(term)
       );
     }
 

@@ -6,20 +6,16 @@ export const FASCE = [
   "JOLLY 1ª FASCIA",
   "FASCIA MEDIA",
   "SOPRA AI LOW COST",
-  "JOLLY 2ª FASCIA",
   "LOW COST 1ª FASCIA",
   "LOW COST 2ª FASCIA",
   "LEGHE NUMEROSE",
-  "JOLLY 3ª FASCIA",
-  "MERCATO",
-  "EXTRA AGGIORNAMENTI",
+  "JOLLY / VICE RILEVANTI",
 ];
 
 export const TITOLARITA = [
   { value: "si", label: "Titolare", emoji: "🟢" },
   { value: "ballottaggio", label: "Ballottaggio", emoji: "🟠" },
   { value: "no", label: "Riserva", emoji: "🔴" },
-  { value: "mercato", label: "Mercato", emoji: "📋" },
 ];
 
 export const FASCIA_COLORS = {
@@ -30,13 +26,10 @@ export const FASCIA_COLORS = {
   "JOLLY 1ª FASCIA": "bg-teal-500 text-white",
   "FASCIA MEDIA": "bg-amber-500 text-white",
   "SOPRA AI LOW COST": "bg-yellow-600 text-white",
-  "JOLLY 2ª FASCIA": "bg-orange-500 text-white",
   "LOW COST 1ª FASCIA": "bg-orange-600 text-white",
   "LOW COST 2ª FASCIA": "bg-red-500 text-white",
   "LEGHE NUMEROSE": "bg-rose-500 text-white",
-  "JOLLY 3ª FASCIA": "bg-pink-500 text-white",
-  "MERCATO": "bg-gray-500 text-white",
-  "EXTRA AGGIORNAMENTI": "bg-violet-600 text-white",
+  "JOLLY / VICE RILEVANTI": "bg-violet-600 text-white",
 };
 
 export const TAGS_PORTIERI = [
@@ -81,8 +74,6 @@ export const FASCE_DIFENSORI = [
   "A RISCHIO",
   "DA EVITARE",
   "MERCATO",
-  "EXTRA AGGIORNAMENTI",
-  "EXTRA MERCATO",
 ];
 
 export const TITOLARITA_DIFENSORI = [
@@ -103,7 +94,6 @@ export const TAGS_DIFENSORI = [
   "Scommessa",
   "Infortunato",
   "Mercato",
-  "Extra aggiornamento",
 ];
 
 export const FASCIA_COLORS_DIFENSORI = {
@@ -127,8 +117,6 @@ export const FASCIA_COLORS_DIFENSORI = {
   "A RISCHIO": "bg-red-800 text-white",
   "DA EVITARE": "bg-gray-700 text-white",
   "MERCATO": "bg-gray-600 text-white",
-  "EXTRA AGGIORNAMENTI": "bg-violet-600 text-white",
-  "EXTRA MERCATO": "bg-purple-700 text-white",
 };
 
 export const CATEGORIE_STRATEGIE_DIFENSORI = [
@@ -258,6 +246,7 @@ export const FASCE_CENTROCAMPISTI = [
   "A RISCHIO",
   "DA EVITARE",
   "MERCATO",
+  "EXTRA AGGIORNAMENTI LIVE",
 ];
 
 export const TITOLARITA_CENTROCAMPISTI = [
@@ -304,6 +293,7 @@ export const FASCIA_COLORS_CENTROCAMPISTI = {
   "A RISCHIO": "bg-red-800 text-white",
   "DA EVITARE": "bg-gray-700 text-white",
   "MERCATO": "bg-gray-600 text-white",
+  "EXTRA AGGIORNAMENTI LIVE": "bg-violet-600 text-white",
 };
 
 // ATTACCANTI
@@ -316,8 +306,8 @@ export const FASCE_ATTACCANTI = [
   "JOLLY 1ª FASCIA",
   "POSSIBILI SORPRESE",
   "FASCIA MEDIA",
+  "INFORTUNATI",
   "SCOMMESSE",
-  "SOPRA AI LOW COST",
   "JOLLY 2ª FASCIA",
   "LOW COST 1ª FASCIA",
   "LOW COST 2ª FASCIA",
@@ -359,8 +349,8 @@ export const FASCIA_COLORS_ATTACCANTI = {
   "JOLLY 1ª FASCIA": "bg-teal-600 text-white",
   "POSSIBILI SORPRESE": "bg-lime-600 text-white",
   "FASCIA MEDIA": "bg-amber-600 text-white",
+  "INFORTUNATI": "bg-yellow-600 text-white",
   "SCOMMESSE": "bg-pink-600 text-white",
-  "SOPRA AI LOW COST": "bg-yellow-600 text-white",
   "JOLLY 2ª FASCIA": "bg-orange-600 text-white",
   "LOW COST 1ª FASCIA": "bg-orange-700 text-white",
   "LOW COST 2ª FASCIA": "bg-red-600 text-white",
